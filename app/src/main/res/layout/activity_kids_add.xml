@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.app.diceroid.nerede.Activities.KidsAddActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="126dp"
+        android:layout_marginStart="8dp"
+        android:text="Atılacak Konum Aralığını Seçiniz"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/kidsAddButon"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/timeOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Saat"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <RadioButton
+            android:id="@+id/timeThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Saat"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <RadioButton
+            android:id="@+id/timeFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Saat"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <RadioButton
+            android:id="@+id/timeEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 Saat"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/kidsAddButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/button_reg"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="İsim"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
